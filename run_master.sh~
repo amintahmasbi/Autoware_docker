@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Running ROS core as master!" 
+nvidia-docker run -t --rm \
+    --net ros_net \
+    --name master \
+    autoware \
+    roscore
+

@@ -1,0 +1,42 @@
+nvidia-docker run -it --rm \
+    --net ros_net \
+    --name talker \
+    --env ROS_HOSTNAME=talker \
+    --env ROS_MASTER_URI=http://master:11311 \
+    autoware \
+    rosrun roscpp_tutorials talker
+
+nvidia-docker run -it --rm \
+    --net ros_net \
+    --name listener \
+    --env ROS_HOSTNAME=listener \
+    --env ROS_MASTER_URI=http://master:11311 \
+    autoware \
+    rosrun roscpp_tutorials listener
+
+nvidia-docker run -it \
+    --env="DISPLAY" \
+    --env="QT_X11_NO_MITSHM=1" \
+    --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
+    --net ros_net \
+    --name rqt \
+    --env ROS_HOSTNAME=rqt \
+    --env ROS_MASTER_URI=http://master:11311 \
+    autoware \
+    rqt
+
+
+nvidia-docker run -it --rm \
+    --net ros_net \
+    --name gui \
+    --env ROS_HOSTNAME=gui \
+    --env ROS_MASTER_URI=http://master:11311 \
+    --user $(id -u) \
+    --env="DISPLAY" \
+    --volume="/etc/group:/etc/group:ro" \
+    --volume="/etc/shadow:/etc/shadow:ro" \
+    --volume="/etc/sudoers.d:/etc/sudoers.d:ro" \
+    --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
+     autoware \
+     rosrun turtlesim turtlesim_node
+

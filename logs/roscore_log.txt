@@ -1,0 +1,25 @@
+... logging to /home/developer/.ros/log/9259953c-23ae-11e7-9a39-0242ac120002/roslaunch-059909f805cc-1.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://059909f805cc:36596/[0m
+ros_comm version 1.11.21
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [42][0m
+[1mROS_MASTER_URI=http://059909f805cc:11311/[0m
+]2;roscore http://059909f805cc:11311/
+[1msetting /run_id to 9259953c-23ae-11e7-9a39-0242ac120002[0m
+[1mprocess[rosout-1]: started with pid [55][0m
+started core service [/rosout]

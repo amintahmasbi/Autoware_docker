@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+docker rmi $(docker images -f "dangling=true" -q)
+
+docker build -t autoware .
