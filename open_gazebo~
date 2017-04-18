@@ -1,0 +1,4 @@
+#!/bin/bash
+export GAZEBO_MASTER_IP=$(docker inspect --format '{{ .NetworkSettings.Networks.ros_net.IPAddress }}' master)
+export GAZEBO_MASTER_URI=$GAZEBO_MASTER_IP:11345 #find the port in Dockerfile
+gzclient --verbose

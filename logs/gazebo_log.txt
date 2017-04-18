@@ -1,0 +1,12 @@
+Error opening log file: "/home/developer/.gazebo/gzserver.log"
+Gazebo multi-robot simulator, version 2.2.6
+Copyright (C) 2012-2014 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+[1;32mMsg[0m Waiting for master
+[1;32mMsg[0m Connected to gazebo master @ http://127.0.0.1:11345
+[1;32mMsg[0m Publicized address: 172.18.0.3
+[1;31mError [RenderEngine.cc:676][0m Can't open display: 
+[1;33mWarning [RenderEngine.cc:92][0m Unable to create X window. Rendering will be disabled
+[1;33mWarning [ModelDatabase.cc:334][0m Getting models from[http://gazebosim.org/models/]. This may take a few seconds.

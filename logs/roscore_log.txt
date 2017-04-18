@@ -1,9 +1,9 @@
-... logging to /home/developer/.ros/log/9259953c-23ae-11e7-9a39-0242ac120002/roslaunch-059909f805cc-1.log
+... logging to /home/developer/.ros/log/a8b9c2fc-243f-11e7-9242-0242ac120002/roslaunch-295aef8eb662-1.log
 Checking log directory for disk usage. This may take awhile.
 Press Ctrl-C to interrupt
 Done checking log file disk usage. Usage is <1GB.
 ]2;roscore
-[1mstarted roslaunch server http://059909f805cc:36596/[0m
+[1mstarted roslaunch server http://295aef8eb662:39200/[0m
 ros_comm version 1.11.21
 
 
@@ -18,8 +18,13 @@ NODES
 
 auto-starting new master
 [1mprocess[master]: started with pid [42][0m
-[1mROS_MASTER_URI=http://059909f805cc:11311/[0m
-]2;roscore http://059909f805cc:11311/
-[1msetting /run_id to 9259953c-23ae-11e7-9a39-0242ac120002[0m
+[1mROS_MASTER_URI=http://295aef8eb662:11311/[0m
+]2;roscore http://295aef8eb662:11311/
+[1msetting /run_id to a8b9c2fc-243f-11e7-9242-0242ac120002[0m
 [1mprocess[rosout-1]: started with pid [55][0m
 started core service [/rosout]
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

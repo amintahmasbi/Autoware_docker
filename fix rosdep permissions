@@ -1,0 +1,3 @@
+sudo rosdep fix-permissions
+rosdep update
+

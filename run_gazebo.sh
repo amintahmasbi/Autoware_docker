@@ -1,0 +1,10 @@
+#!/bin/bash
+nvidia-docker run -t --rm \
+    --net ros_net \
+    --name gazebo \
+    --env ROS_HOSTNAME=gazebo \
+    --volume /home/${USER}/.gazebo/:/root/.gazebo/ \
+    --workdir="/home/developer" \
+    --env ROS_MASTER_URI=http://master:11311 \
+    autoware \
+    gzserver
